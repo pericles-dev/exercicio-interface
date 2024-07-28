@@ -7,13 +7,13 @@ import java.util.List;
 public class Contract {
     private Integer number;
     private LocalDate date;
-    private Double totalVlue;
-    private List<Installment> installments = new ArrayList<>();
+    private Double totalValue;
+    private final List<Installment> installments = new ArrayList<>();
 
-    public Contract(Integer number, LocalDate date, Double totalVlue) {
+    public Contract(Integer number, LocalDate date, Double totalValue) {
         this.number = number;
         this.date = date;
-        this.totalVlue = totalVlue;
+        this.totalValue = totalValue;
     }
 
     public Integer getNumber() {
@@ -32,12 +32,12 @@ public class Contract {
         this.date = date;
     }
 
-    public Double getTotalVlue() {
-        return totalVlue;
+    public Double getTotalValue() {
+        return totalValue;
     }
 
-    public void setTotalVlue(Double totalVlue) {
-        this.totalVlue = totalVlue;
+    public void setTotalValue(Double totalValue) {
+        this.totalValue = totalValue;
     }
 
     public List<Installment> getInstallments() {
